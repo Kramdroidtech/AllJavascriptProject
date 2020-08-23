@@ -1,0 +1,108 @@
+:root{
+    --primary-color: #fff;
+    --secondary-color: #f8f843;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+main{
+    height: 100vh;
+    display: grid;
+    grid-auto-rows: 1fr;
+}
+main #javascript-container{
+    height: auto;
+    max-width: 100%;
+    background: #333;
+}
+main #javascript-container .section-title{
+    text-align: center;
+    margin: 20px;
+    border-bottom: solid 2px var(--secondary-color);
+}
+main #javascript-container .section-title h1{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    padding: 10px;
+}
+main #javascript-container .section-title h1 span{
+    color: var(--secondary-color);
+}
+main #javascript-container .all-projects{
+    height: auto;
+    max-width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    row-gap: 20px;
+}
+main #javascript-container .all-projects .project{
+    width: 200px;
+    height: 350px;
+    background: #111;
+    overflow: hidden;
+    border: solid 1px var(--secondary-color);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+main #javascript-container .all-projects .project:hover{
+    transform: scale(1.03);
+}
+main #javascript-container .all-projects .project .project-thumbnail{
+    width: 200px;
+    height: 150px;
+    border-bottom: solid 1px var(--secondary-color);
+    overflow: hidden;
+}
+main #javascript-container .all-projects .project .project-thumbnail:hover{
+    transform: scale(1.02);
+}
+main #javascript-container .all-projects .project .project-title{
+    text-align: center;
+}
+main #javascript-container .all-projects .project .project-title h1{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 10px;
+    color: var(--secondary-color);
+}
+main #javascript-container .all-projects .project .project-description{
+    text-align: center;
+    word-wrap: wrap;
+    padding: 0 5px;
+    margin-bottom: 20px;
+}
+main #javascript-container .all-projects .project .project-description p{
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+main #javascript-container .all-projects .project .project-direct{
+    text-align: center;
+}
+main #javascript-container .all-projects .project .project-direct a{
+    color: var(--secondary-color);
+    border: solid 1px var(--secondary-color);
+    padding: 13px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    transition: all .3s ease;
+}
+main #javascript-container .all-projects .project .project-direct a:hover{
+    background: #f8f843;
+    color: black;
+}
